@@ -1,5 +1,6 @@
 from tkinter import Tk
 import pyperclip
-print(Tk().clipboard_get().replace('\r','').replace('\n',''))
-pyperclip.copy(Tk().clipboard_get().replace('\r','').replace('\n',''))
+full_str = Tk().clipboard_get().replace('\r','').replace('\n',' ')
+print(full_str)
+pyperclip.copy(full_str)
 pyperclip.paste()
